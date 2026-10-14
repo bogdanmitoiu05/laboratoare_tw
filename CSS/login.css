@@ -1,85 +1,84 @@
 body {
-background-color: #024A76;
+  background-color: #024a76;
 }
 .login-container {
-    width: 100%;
-    height: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    object-fit: fill;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  object-fit: fill;
 }
 body {
-flex: 1;
-display: flex;
-justify-content: center;
-align-items: center;
-overflow: hidden;
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
 }
 
 .login-image img {
-width: 70%;
-height: 70%;
-object-fit: cover;
+  width: 70%;
+  height: 70%;
+  object-fit: cover;
 }
 .separator {
-width: 5px;
-background-color: wheat;
+  width: 5px;
+  background-color: wheat;
 }
 .login-form {
-flex: 1;
-display: flex;
-flex-direction: column;
-justify-content: center;
-margin-left: 8px;
-padding: 40px;
-color: red;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-left: 8px;
+  padding: 40px;
+  color: red;
 }
 .login-form h2 {
-margin-bottom: 8px;
-text-align: center;
-font-weight: normal;
+  margin-bottom: 8px;
+  text-align: center;
+  font-weight: normal;
 }
 .login-form input {
-padding: 4px;
-margin-bottom: 4px;
-border: 2px;
-border-radius: 6px;
-font-size: bold;
+  padding: 4px;
+  margin-bottom: 4px;
+  border: 2px;
+  border-radius: 6px;
+  font-size: bold;
 }
 input:focus {
-outline: 1px solid blue;
+  outline: 1px solid blue;
 }
 input:hover {
-transform: scale(2,3);
-transition: all .1s ease-in-out;
+  transform: scale(2, 3);
+  transition: all 0.1s ease-in-out;
 }
 .login-form button {
-
-padding: 15px;
-background-color: olive;
-border: none;
-border-radius: 8px;
-color: white;
-font-size: bold;
-cursor: pointer;
-transition: background 0.3s;
+  padding: 15px;
+  background-color: olive;
+  border: none;
+  border-radius: 8px;
+  color: white;
+  font-size: bold;
+  cursor: pointer;
+  transition: background 0.3s;
 }
 .login-form button:hover {
-background-color: burlywood;
+  background-color: burlywood;
 }
 .register-text {
-margin-top: 4px;
-text-align: center;
-font-size: 14px;
-color: white;
+  margin-top: 4px;
+  text-align: center;
+  font-size: 14px;
+  color: white;
 }
 .register-text a {
-color: #3471B8;
-text-decoration: none;
-font-weight: bold;
-transition: color 0.3s;
+  color: #3471b8;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s;
 }
 .register-text a:hover {
-color: #024A76;
+  color: #024a76;
 }

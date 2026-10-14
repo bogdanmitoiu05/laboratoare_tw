@@ -1,0 +1,104 @@
+html, body{
+    background: fixed;
+    background-color:gray;
+    margin-top: 0%;
+    margin-bottom: 0%;
+    height: max-content;
+}
+
+.page{
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+    padding: 10px;
+}
+
+.card{
+    max-width: 90%;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    background-color: rgba(13, 34, 67);
+    padding: 25px;
+    margin-top: 25px;
+    height: 100%;
+}
+h1{
+    font-family: sans-serif;
+    color: goldenrod;
+    font-weight: bold;
+}
+
+.row{
+    margin-bottom: 16px;
+    margin-top: 16px;
+    text-align: left;
+}
+
+.checkbox-group {
+    display: flex;
+    flex-direction: row; /* Arranges items horizontally */
+    align-items: center; /* Aligns checkboxes vertically with text */
+}
+.row label,p{
+    display: block;
+    margin-bottom: 6px;
+    font-weight: lighter;
+    color: aliceblue;
+}
+
+input, select, textarea{
+    width: 100%;
+    border: 2px solid red;
+    border-radius: 5px;
+    background: fixed;
+    color: black;
+    font-size: medium;
+    box-sizing: border-box;
+    
+}
+
+.two-col{
+    display: flex;
+    gap: 12px;
+}
+
+.two-col > div{
+    flex: 1;
+}
+
+.checkbox-grid{
+    display: flex;
+    gap: 10px;
+    flex-wrap:  wrap;
+}
+
+.actions{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 16px;
+}
+
+.btn{
+    border-radius: 5px;
+    text-align: center;
+    margin-top: 16px;
+    margin-bottom: 16px;
+    margin-left: 4px;
+    margin-right: 4px;
+    fill: none;
+}
+.btn.primary{
+    color: goldenrod;
+    
+}
+.btn.ghost{
+    color:antiquewhite;
+}
+
+.login-link{
+    align-content: center;
+    font-family: sans-serif;
+}
+.login-link a{
+    color: goldenrod;
+}
+

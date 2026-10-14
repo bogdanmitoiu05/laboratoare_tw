@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="ro">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Înregistrează-te</title>
+        <link rel="stylesheet" href="../CSS/register.css">
+    </head>
+
+    <body>
+        <main class="page">
+            <section class="card">
+                <h1>Înregistrează-te</h1>
+                <form>
+                    <div class="row">
+                        <label for="username">Nume utilizator</label>
+                        <input type="text" placeholder="doar litere mici și numere" name="username">
+                    </div>
+                    <div class="row two-col">
+                        <div>
+                            <label for="password_field">Parolă</label>
+                            <input type="password" name="password_field" required>
+                        </div>
+                        <div>
+                            <label for="confirm_password_field">Confirmă parola</label>
+                            <input type="password" name="confirm_password field" required>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <p>Gen</p>
+                        <input type="radio" name="gender" id="male" value="male">
+                        <label for="male">Masculin</label>
+                        <input type="radio" name="gender" id="female" value="female">
+                        <label for="female">Feminin</label>
+                        <input type="radio" name="gender" id="non-binary" value="non-binary">
+                        <label for="non-binary">Divers</label>
+                    </div>
+                    <div class="row">
+                        <label for="country">Țara de origine</label>
+
+                        <select name="country" id="country">
+                            <option value="romania">România</option>
+                            <option value="serbia">Serbia</option>
+                            <option value="bulgaria">Bulgaria</option>
+                            <option value="hungary">Ungaria</option>
+                            <option value="ukraine">Ucraina</option>
+                            <option value="moldova">Rep. Moldova</option>
+                        </select>
+                    </div>
+
+                    <div class="row">
+                        <p>Interese</p>
+                        <div class="checkbox-group">
+                        <input type="checkbox" id="frontend", name="frontend">
+                        <label for="frontend">Frontend</label>
+                        <input type="checkbox" id="backend", name="backend">
+                        <label for="backend">Backend</label>
+                        <input type="checkbox" id="uiux", name="uiux">
+                        <label for="uiux">UX/UI</label>
+                        <input type="checkbox" id="javascript", name="javascript">
+                        <label for="javascript">JavaScript</label>
+                        <input type="checkbox" id="wordpress", name="wordpress">
+                        <label for="wordpress">WordPress</label>
+                        <input type="checkbox" id="django", name="django">
+                        <label for="django">Django</label>
+                        </select>
+                    </div>
+                    <div class="row">
+                        <label for="avatar">Încarcă avatar</label>
+                        <input type="file" id="avatar", name="avatar">
+                    </div>
+                    <div class="actions">
+                        <button type="submit" class="btn primary">Submit</button>
+                        <button type="reset" class="btn ghose">Reset</button>
+                    </div>
+                    <p class="login-link">Ai deja cont?
+                        <a href="login.html">Mergi la login</a>
+                    </p>
+                </form>
+            </section>
+        </main>
+    </body>
+</html>

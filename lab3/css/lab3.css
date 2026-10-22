@@ -35,7 +35,7 @@ nav > .logo{
     margin-right: auto;
 }
 @media (min-width: 768px) {
-    .card-container { grid-template-columns: 1fr 2fr; }
+    /*.card-container { grid-template-columns: 1fr 2fr; }*/
     nav{
         flex-direction: row;
     }
@@ -46,7 +46,7 @@ nav > .logo{
     padding: 14px;
     background-color: lightgray;
     min-width: min-content;
-
+    max-width: 450px;
 }
 
 .card h1{

@@ -14,16 +14,21 @@ header h1{
 }
 
 .card-container{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+    display: grid;
+    grid-template-columns: repeat(auto-fit,
+    minmax(min(100%, 240px), 1fr));
+    gap: 100px;
+    
+    grid-auto-columns: min-content;
 }
 
 .card{
     box-shadow: 10px 10px lightblue;
-    margin: 10em;
-    padding: 4em;
+    margin: 10px;
+    padding: 14px;
     background-color: lightgray;
+    min-width: min-content;
+
 }
 
 .card h1{
@@ -43,7 +48,9 @@ header h1{
     box-sizing: border-box;
 }
 html{
-    background-color: #0f1628
+    background-color: #0f1628;
+    
+    
 }
 .important{
     color: goldenrod;

@@ -21,7 +21,25 @@ header h1{
     
     grid-auto-columns: min-content;
 }
-
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-direction: column;
+}
+nav > .nav-item{
+    padding: 14px 16px;
+    text-decoration: none;
+}
+nav > .logo{
+    margin-right: auto;
+}
+@media (min-width: 768px) {
+    .card-container { grid-template-columns: 1fr 2fr; }
+    nav{
+        flex-direction: row;
+    }
+}
 .card{
     box-shadow: 10px 10px lightblue;
     margin: 10px;

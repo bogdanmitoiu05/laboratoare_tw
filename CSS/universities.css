@@ -34,3 +34,21 @@ text-decoration:none}
 td a:hover{
 text-decoration: double;
 }
+.container{
+    display: flex;
+}
+.csv_btn{
+    margin-left: auto;
+    margin-right: 4px;
+    padding: 8px 16px;
+    border: 0;
+    border-radius: 10px;
+    background: goldenrod;
+    color: black;
+    font: inherit;
+    cursor: pointer;
+    transition: background-color 150ms ease, transform 150ms ease;
+}
+.csv_btn:hover{
+    background: #dcd872;
+}

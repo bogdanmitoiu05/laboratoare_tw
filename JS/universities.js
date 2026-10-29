@@ -4,6 +4,7 @@ const API_URL = "http://universities.hipolabs.com/search?country=Romania";
 const statusText = document.getElementById("status");
 const tbody = document.getElementById("tbody");
 const qInput = document.getElementById("q");
+const csvDownloadBtn = document.getElementById("csvDownload");
 let all = [];
 
 function setStatus(text) {
@@ -42,3 +43,27 @@ qInput.addEventListener("input", () => {
     setStatus(`Filtrate: ${filtered.length} din ${all.length}.`);
 });
 loadUniversities();
+
+function exportCSV(data) {
+    if (!data.length) return alert("Nu există date de exportat.");
+    const header = ["nume", "tara", "site"];
+    const rows = data.map(u => [
+    u.name || "",
+    u.country || "",
+    (u.web_pages && u.web_pages[0]) || ""
+    ]);
+    const csvContent = [header, ...rows]
+    .map(r => r.map(v => `"${v.replace(/"/g, '""')}"`).join(","))
+    .join("\n");
+    const blob = new Blob([csvContent], { type: "text/csv;charset=utf-8" });
+    const url = URL.createObjectURL(blob);
+    const a = document.createElement("a");
+    a.href = url;
+    a.download = "universitati.csv";
+    a.click();
+    URL.revokeObjectURL(url);
+}
+
+csvDownloadBtn.addEventListener('click', ()=>{
+    exportCSV(all);
+});

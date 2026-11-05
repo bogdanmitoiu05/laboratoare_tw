@@ -11,8 +11,8 @@ cursor.style.color = "black";
 // Asculta evenimentul de miscare a mouse-ului pe intreaga pagina
 document.addEventListener("mousemove", (e) => {
     // Actualizeaza pozitia elementului cursor in functie de coordonatele mouse-ului
-    cursor.style.left = `${e.clientX}px`; // coordonata X
-    cursor.style.top = `${e.clientY}px`; // coordonata Y
+    cursor.style.left = `${e.clientX + 3}px`; // coordonata X
+    cursor.style.top = `${e.clientY + 3}px`; // coordonata Y
 });
 // Functie care schimba culoarea cursorului ciclic pentru efect curcubeu
 function animateColor(timestamp) {

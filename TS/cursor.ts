@@ -18,15 +18,16 @@ document.addEventListener("mousemove", (e: MouseEvent) => {
     cursor.style.top = `${e.clientY}px`; // coordonata Y
 });
 
-requestAnimationFrame(animateColor);
+
 // Functie care schimba culoarea cursorului ciclic pentru efect curcubeu
-function animateColor() {
+function animateColor(timestamp: number) {
     // Este nevoie sa cresti nuanta cu 1 si sa nu uiti sa o mentinem intre 0 si 359
     // Seteaza culoarea de fundal a cursorului folosind HSL (Hue, Saturation, Lightness)
-    cursor.style.backgroundColor = `hsl(118, 69%, 33%)`;
+    cursor.style.backgroundColor = `hsl(${Math.floor(timestamp/15)%360}, 69%, 33%)`;
     // Adauga un efect de glow (umbra) la cursor cu aceeasi culoare
-    cursor.style.boxShadow = `0 0 15px hsl(118, 69%, 33%)`;
+    cursor.style.boxShadow = `0 0 15px hsl(${Math.floor(timestamp/15)%300+60}, 69%, 33%)`;
+    requestAnimationFrame(animateColor);
 }
 
 // Este nevoie sa pornesti animatia de schimbare a culorii
-animateColor();
+animateColor(0);

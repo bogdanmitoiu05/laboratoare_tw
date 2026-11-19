@@ -1,2 +1,5 @@
 .DS_Store
 node_modules/
+.vscode/
+.venv/
+labproj/db.sqlite3

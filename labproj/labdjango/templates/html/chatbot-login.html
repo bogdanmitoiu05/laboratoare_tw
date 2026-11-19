@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+{% load static %}
 <html lang="ro">
     <head>
         <title>Autentificare Chatbot</title>
@@ -11,6 +12,6 @@
             <input type="password" id="password" placeholder="Parola">
             <button type="submit">Login</button>
         </form>
-        <script src="../JS/login.js"></script>
+        <script src="{% static 'JS/login.js' %}"></script>
     </body>
 </html>

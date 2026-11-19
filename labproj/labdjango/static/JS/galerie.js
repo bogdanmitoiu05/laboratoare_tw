@@ -1,9 +1,9 @@
 "use strict";
-// Array cu imaginile din folderul ../MEDIA
+// Array cu imaginile din folderul static/media
 const images = [
-    "../MEDIA/cute.jpeg", // Exemplu de imagine
-    "../MEDIA/cute-2.jpeg", // Exemplu de imagine
-    "../MEDIA/cute-3.jpeg", // Exemplu de imagine
+    `${window.STATIC_URL}media/cute.jpeg`,
+    `${window.STATIC_URL}media/cute-2.jpeg`,
+    `${window.STATIC_URL}media/cute-3.jpeg`,
 ];
 // Obtinem elementul principal din DOM
 const mainImage = document.getElementById("carousel-image");

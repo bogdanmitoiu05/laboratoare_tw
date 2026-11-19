@@ -1,15 +1,16 @@
 <!DOCTYPE html>
+{% load static %}
 <html lang="en">
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Login Page</title>
-        <link rel="stylesheet" href="../CSS/login.css">
+        <link rel="stylesheet" href="{% static 'CSS/login.css' %}">
     </head>
     <body>
     <div class="login-container">
         <div class="login-image">
-            <img src="../MEDIA/image.png" alt="Imagine login">
+            <img src="{% static 'media/image.png' %}" alt="Imagine login">
         </div>
         <div class="divider"></div>
         <div class="login-form">

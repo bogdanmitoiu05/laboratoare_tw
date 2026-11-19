@@ -1,10 +1,11 @@
 <!DOCTYPE html>
+{% load static %}
 <html lang="en">
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Chatbot</title>
-    <link rel="stylesheet" href="../CSS/chatbot.css">
+    <link rel="stylesheet" href="{% static 'CSS/chatbot.css' %}">
   </head>
   <body>
     <div class="chat-container" id="chat-container"></div>
@@ -12,6 +13,6 @@
       <input type="text" id="userMessage" placeholder="Tastează aici întrebarea ta">
       <button type="submit">Trimite</button>
     </form>
-    <script src="../JS/chatbot.js"></script>
+    <script src="{% static 'JS/chatbot.js' %}"></script>
   </body>
 </html>

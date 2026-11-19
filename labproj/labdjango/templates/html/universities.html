@@ -1,10 +1,11 @@
 <!DOCTYPE html>
+{% load static %}
 <html lang="en">
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Universități</title>
-        <link rel="stylesheet" href="../CSS/universities.css">
+        <link rel="stylesheet" href="{% static 'CSS/universities.css' %}">
     </head>
     <body>
         <div>
@@ -27,5 +28,5 @@
             </table>
         </div>
     </body>
-    <script src="../JS/universities.js"></script>
+    <script src="{% static 'JS/universities.js' %}"></script>
 </html>

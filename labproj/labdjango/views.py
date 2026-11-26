@@ -26,3 +26,5 @@ def register(request):
 
 def universities(request):
     return render(request, "./html/universities.html")
+def api_page(request):
+    return render(request, "./html/apiname.html")

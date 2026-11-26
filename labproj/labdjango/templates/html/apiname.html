@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="ro">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-
+width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="{% static 'CSS/apiname_style.css' %}">
+    <title>Sărbători naționale</title>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <ul>
+          <li>
+            <a href="{% url 'home' %}">Acasă</a>
+          </li>
+          <li>
+            <a href="#">Acasă</a>
+          </li>
+          <li>
+            <a href="#">Tehnologii</a>
+          </li>
+          <li>
+            <a href="../universities">Facultăți</a>
+          </li>
+          <li>
+            <a href="../chatbot">Chatbot</a>
+          </li>
+          <li>
+            <a href="../galerie">Galerie</a>
+          </li>
+          <li>
+            <a href="#">Logout</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <h1>Sărbători naționale</h1>
+      <!-- Search area -->
+      <form id="searchForm">
+        <input id="queryInput" type="text" placeholder="Search...">
+        <button id="searchBtn" type="submit">Search</button>
+      </form>
+      <!-- Status area -->
+      <p id="status" aria-live="polite"></p>
+      <!-- Results area -->
+      <div id="results"></div>
+    </main>
+    <footer>Lab TW 9</footer>
+    <script src="{% static 'JS/apiname.js'%}"></script>
+  </body>
+</html>

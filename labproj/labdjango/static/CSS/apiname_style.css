@@ -1,0 +1,29 @@
+/* Search area */
+#searchForm {
+display: flex;
+gap: 0.5rem;
+margin: 1rem 0;
+}
+#queryInput {
+padding: 0.5rem;
+border-radius: 0.4rem;
+border: 1px solid goldenrod;
+flex: 1;
+}
+#searchBtn { padding: 0.5rem 1rem; cursor:
+pointer; }
+/* Status element */
+#status { min-height: 1.5rem; margin: 0.5rem 0; }
+/* Card grid */
+#results {
+display: grid;
+grid-template-columns: repeat(auto-fill,
+minmax(220px, 1fr));
+gap: 1rem;
+margin-top: 1rem;
+}
+.card {
+padding: 1rem;
+border: 1px solid gray;
+border-radius: 3px;
+}
